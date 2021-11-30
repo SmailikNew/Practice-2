@@ -1,0 +1,27 @@
+﻿<Window x:Class="Practice_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practice_2"
+        mc:Ignorable="d"
+        Title="Practice 2, variant 12" Height="300" Width="300" ResizeMode="NoResize" MinHeight="400" MinWidth="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Файл" Height="20">
+                <MenuItem Header="Заполнить массив" Click="FillArray_Click" />
+                <MenuItem Header="Сохранить массив" Click="SaveArray_Click"/>
+                <MenuItem Header="Открыть массив" Click="OpenArray_Click"/>
+                <MenuItem Header="Очистить массив" Click="ClearArray_Click"/>
+                <Separator/>
+                <MenuItem Header="Выход" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="Справка" Height="20">
+                <MenuItem Header="О программе" Click="GetInformation_Click"/>
+            </MenuItem>
+        </Menu>
+        <Button Content="Найти" HorizontalAlignment="Left" Margin="54,305,0,0" VerticalAlignment="Top" Width="200" Click="Calculation_Click" Height="28"/>
+        <TextBox x:Name="outputValue" HorizontalAlignment="Left" Height="23" Margin="54,197,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="200" IsReadOnly="True" />
+        <DataGrid x:Name="dataGridMain"  HorizontalAlignment="Left" Height="100" Margin="54,51,0,0" VerticalAlignment="Top" Width="200"/>
+    </Grid>
+</Window>
